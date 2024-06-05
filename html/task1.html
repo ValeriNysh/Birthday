@@ -2,8 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=<device-width>, initial-scale=1.0" />
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Birthday, Schss!</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -26,9 +26,27 @@
       <p>Bunny will give you Küss-Küsses and you need to count the amount</p>
       <p>Write the number below</p>
     </div>
-    <form class="answer">
-      <input type="number" id="task1" name="task1" />
-      <button type="submit" value="Submit">Check</button>
+    <form id="answerForm">
+      <input id="task1Input" type="number" />
+      <button id="checkButton" type="submit">Check</button>
     </form>
+    <div id="errorMessage">
+      <p>Try again, Schatz</p>
+      <p>I believe in you!</p>
+    </div>
+    <div id="hidden">
+      <div>
+        <p class="correctAnswer">28!</p>
+        <p>Geanau! Richtig!</p>
+        <p class="wichtig">My Schss deserves 28,000 Küss-Küsses every day</p>
+        <p class="wichtig">Schss deserves to love and to be loved</p>
+        <p class="wichtig">Schss deserves only the best positive emotions</p>
+      </div>
+      <button id="nextTaskButton" onClick="location.href='task1.html'">
+        Next Task
+      </button>
+    </div>
+
+    <script src="../main.js" defer></script>
   </body>
 </html>
