@@ -1,3 +1,5 @@
+// TASK 1
+
 const task1Input = document.getElementById("task1Input").value;
 if (parseInt(task1Input) != null) {
 }
@@ -20,5 +22,25 @@ function checkNumber() {
     answerForm.style.display = "none";
   } else {
     errorMessage.style.display = "flex";
+  }
+}
+
+// TASK 2
+
+function checkAnswer(buttonId) {
+  const btnWrong1 = document.getElementById("btnWrong1");
+  const btnWrong2 = document.getElementById("btnWrong2");
+  const btnWrong3 = document.getElementById("btnWrong3");
+  const btnCorrect = document.getElementById("btnCorrect");
+
+  if (
+    buttonId === "btnWrong1" ||
+    buttonId === "btnWrong2" ||
+    buttonId === "buttonWrong3"
+  ) {
+    // document.getElementById(buttonId).style.
+    errorMessage.style.display = "flex";
+  } else {
+    errorMessage.style.display = "none";
   }
 }

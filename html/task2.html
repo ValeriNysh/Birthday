@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Birthday, Schss!</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Oswald:wght@200..700&family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <h1 class="task-num">Task №2</h1>
+
+    <div class="task-description">
+      <p>Choose what shouldn't be here</p>
+    </div>
+    <form id="optionButtonsForm">
+      <button
+        id="btnWrong1"
+        class="optionBtn"
+        onclick="checkAnswer(btnWrong1)"
+      ></button>1 
+      <button
+        id="btnWrong2"
+        class="optionBtn"
+        onclick="checkAnswer(btnWrong2)"
+      ></button>
+      <button
+        id="btnCorrect"
+        class="optionBtn"
+        onclick="checkAnswer(btnCorrect)"
+      ></button>
+      <button
+        id="btnWrong3"
+        class="optionBtn"
+        onclick="checkAnswer(btnWrong3)"
+      ></button>
+    </form>
+    <div id="errorMessage">
+      <p>Try again, Schatz</p>
+      <p>I believe in you!</p>
+    </div>
+    <div id="hidden">
+      <div>
+        <p class="correctAnswer">Richtig! You did it again!!</p>
+        <p class="wichtig">My Schss deserves 28,000 Küss-Küsses every day</p>
+        <p class="wichtig">Schss deserves to love and to be loved</p>
+        <p class="wichtig">Schss deserves only the best positive emotions</p>
+      </div>
+      <button id="nextTaskButton" onClick="location.href='task1.html'">
+        Next Task
+      </button>
+    </div>
+
+    <script src="../main.js" defer></script>
+  </body>
+</html>
