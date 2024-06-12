@@ -1,12 +1,12 @@
 body {
-  padding: 25px;
+  padding: 16px;
   display: flex;
   flex-direction: column;
   text-align: center;
   /* background-color: #29064b; */
   /* background-color: #380c64; */
   /* background-color: #1c0471; */
-  background: linear-gradient(to right, #29064b, #1c0471);
+  background: linear-gradient(to right, #320a5a, #1c0471);
   color: white;
   font-family: "Cabin", sans-serif;
   font-optical-sizing: auto;
@@ -28,6 +28,7 @@ h2 {
 
 h2 {
   font-size: 36px;
+  margin: 12px 0;
 }
 
 button {
@@ -45,7 +46,28 @@ button {
 }
 
 button:hover {
-  background-color: #cdd7fc;
+  background-color: #fff;
+}
+
+.bunnyAndText {
+  display: flex;
+  justify-content: center;
+}
+
+.bunnySays {
+  padding: 10px;
+  margin-top: 12px;
+  width: 200px;
+  border-radius: 50%;
+  border: 1px solid #cdd7fc;
+  /* text-transform: none; */
+}
+
+#bunny {
+  width: 140px;
+  /* height: max-content; */
+  display: flex;
+  justify-content: center;
 }
 
 .main-description {
@@ -59,7 +81,7 @@ button:hover {
 }
 
 .task-description {
-  margin-bottom: 12px;
+  /* margin-bottom: 12px; */
 }
 
 #checkButton {
@@ -85,7 +107,7 @@ button:hover {
 
 #hidden {
   display: none;
-  margin-top: 0px;
+  margin-top: 20px;
   flex-direction: column;
   align-items: center;
 }
@@ -97,6 +119,12 @@ button:hover {
   font-size: xx-large;
 }
 
+.highlightText {
+  color: rgb(92, 236, 255);
+  /* color: rgb(242, 255, 0); */
+  /* color: rgb(238, 244, 128); */
+}
+
 /* ////////////////////////// */
 /* TASK 1 */
 
@@ -104,6 +132,7 @@ button:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 12px;
 }
 
 #answerForm input {
@@ -125,13 +154,15 @@ button:hover {
 
 #optionButtonsForm {
   flex-direction: row;
+  margin-top: 32px;
 }
 
 .optionBtn {
-  width: 120px;
-  height: 90px;
+  width: 140px;
+  height: 124px;
+  margin: 10px;
   border: none;
-  border-radius: 2%;
+  border-radius: 10%;
 }
 
 .optionBtn:hover {

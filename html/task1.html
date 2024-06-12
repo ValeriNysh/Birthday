@@ -23,7 +23,15 @@
 
     <div class="task-description">
       <p>Now you should be very concentrated</p>
-      <p>Bunny will give you Küss-Küsses and you need to count the amount</p>
+    </div>
+    <div class="bunnyAndText">
+      <div class="bunnySays">
+        <p>Bunny will give you Küss-Küsses and you need to count how many</p>
+      </div>
+      <img id="bunny" src="../sources/bunny.png" />
+    </div>
+
+    <div class="task-description">
       <p>Write the number below</p>
     </div>
     <form id="answerForm">
@@ -38,9 +46,18 @@
       <div>
         <p class="correctAnswer">28!</p>
         <p>Geanau! Richtig!</p>
-        <p class="wichtig">My Schss deserves 28,000 Küss-Küsses every day</p>
-        <p class="wichtig">Schss deserves to love and to be loved</p>
-        <p class="wichtig">Schss deserves only the best positive emotions</p>
+        <p>
+          My Schss deserves
+          <span class="highlightText">28,000 Küss-Küsses</span> every day
+        </p>
+        <p>
+          Schss deserves to <span class="highlightText">love</span> and to
+          <span class="highlightText">be loved</span>
+        </p>
+        <p>
+          Schss deserves to experience
+          <span class="highlightText">only the best positive emotions</span>
+        </p>
       </div>
       <button id="nextTaskButton" onClick="location.href='task2.html'">
         Next Task
