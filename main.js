@@ -1,3 +1,9 @@
+function scrollToCenter(element) {
+  // const hiddenPart = document.getElementById("hidden");
+  // if (hiddenPart && hiddenPart.style.display === "flex")
+  element.scrollIntoView({ behavior: "smooth", block: "center" });
+}
+
 // TASK 1
 
 const task1Input = document.getElementById("task1Input").value;
@@ -17,22 +23,17 @@ function checkNumber() {
   const hiddenPart = document.getElementById("hidden");
 
   if (parseInt(task1Input) === 28) {
-    hiddenPart.style.display = "flex";
     errorMessage.style.display = "none";
     answerForm.style.display = "none";
+    hiddenPart.style.display = "flex";
+    scrollToCenter(hiddenPart);
   } else {
     errorMessage.style.display = "flex";
+    scrollToCenter(errorMessage);
   }
 }
 
 // TASK 2
-
-// const optionButtonsForm = document.getElementById(optionButtonsForm);
-
-// optionButtonsForm.addEventListener("submit", function (e) {
-//   e.preventDefault();
-//   checkAnswer();
-// });
 
 function checkAnswer(event, buttonId) {
   event.preventDefault();
@@ -46,6 +47,7 @@ function checkAnswer(event, buttonId) {
   if (buttonId === btnCorrect) {
     errorMessage.style.display = "none";
     hiddenPart.style.display = "flex";
+    scrollToCenter(hiddenPart);
   } else if (
     buttonId === btnWrong1 ||
     buttonId === btnWrong2 ||
@@ -53,5 +55,6 @@ function checkAnswer(event, buttonId) {
   ) {
     hiddenPart.style.display = "none";
     errorMessage.style.display = "flex";
+    scrollToCenter(errorMessage);
   }
 }
