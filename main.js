@@ -1,7 +1,5 @@
 function scrollToCenter(element) {
-  // const hiddenPart = document.getElementById("hidden");
-  // if (hiddenPart && hiddenPart.style.display === "flex")
-  element.scrollIntoView({ behavior: "smooth", block: "center" });
+  element?.scrollIntoView({ behavior: "smooth", block: "center" });
 }
 
 function showHidden() {
@@ -17,7 +15,7 @@ function showError() {
   const hiddenPart = document.getElementById("hidden");
   errorMessage.style.display = "flex";
   hiddenPart.style.display = "none";
-  scrollToCenter(hiddenPart);
+  scrollToCenter(errorMessage);
 }
 
 // TASK 1
@@ -34,9 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   function checkNumber() {
-    const inputValue = task1Input.value;
-
-    if (parseInt(inputValue) === 28) {
+    if (parseInt(task1Input.value) === 28) {
       answerForm.style.display = "none";
       showHidden();
     } else {
@@ -67,6 +63,7 @@ function checkAnswer(event, buttonId) {
 }
 
 // TASK 3
+
 let currentAudio = null;
 
 function playMusic(event, audioId) {
@@ -92,12 +89,20 @@ function playMusic(event, audioId) {
 
 const dropdown = document.getElementById("dropdown");
 const checkSongBtn = document.getElementById("checkSongButton");
+const songAnswerForm = document.getElementById("songAnswerForm");
 
-checkSongBtn.addEventListener("click", () => {
+songAnswerForm?.addEventListener("submit", function (e) {
+  e.preventDefault();
+});
+
+scrollToCenter(dropdown);
+
+checkSongBtn?.addEventListener("click", () => {
   const selectedValue = dropdown.value;
   const correctValue = "option2";
 
   if (selectedValue === correctValue) {
+    songAnswerForm.style.display = "none";
     showHidden();
   } else {
     showError();

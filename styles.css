@@ -85,10 +85,6 @@ button:hover {
   margin: 16px 0;
 }
 
-.task-description {
-  margin-top: 12px;
-}
-
 #checkButton {
   margin-top: 36px;
   width: fit-content;
@@ -125,6 +121,14 @@ button:hover {
   font-size: xx-large;
 }
 
+.correctAnswerSmaller {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: rgb(0, 255, 34);
+  font-weight: bold;
+  font-size: x-large;
+}
+
 .highlightText {
   color: rgb(92, 236, 255);
   /* color: rgb(242, 255, 0); */
@@ -134,7 +138,7 @@ button:hover {
 /* ////////////////////////// */
 /* TASK 1 */
 
-#answerForm {
+.answerForm {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -204,8 +208,8 @@ button:hover {
 }
 
 #btnCorrect {
-  background: none;
-  background-image: url(sources/cheesecake.jpg);
+  background: white;
+  background-image: url(sources/sahne.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -219,9 +223,25 @@ button:hover {
 
 .musicButton {
   width: 100%;
-  height: 50px;
+  height: 40px;
   border-radius: 0%;
   padding: 10px;
+}
+
+#dropdown {
+  width: 100px;
+  height: 50px;
+  margin: 20px 0;
+}
+
+option#dropdown {
+  text-align: center;
+}
+
+select#dropdown {
+  font-size: 20px;
+  text-align: center;
+  padding-right: 5px;
 }
 
 /* 393px * 852px // 430px * 932px */
