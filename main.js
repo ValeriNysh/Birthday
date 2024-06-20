@@ -62,7 +62,7 @@ function checkAnswer(event, buttonId) {
   }
 }
 
-// TASK 3 and particulary TASK 5
+// TASK 3 and particulary TASK 6
 
 let currentAudio = null;
 
@@ -100,9 +100,8 @@ scrollToCenter(dropdown);
 
 checkSongBtn?.addEventListener("click", () => {
   const selectedValue = dropdown.value;
-  const correctValue = "option2";
 
-  if (selectedValue === correctValue) {
+  if (selectedValue === "option2") {
     songAnswerForm.style.display = "none";
     showHidden();
   } else {
@@ -155,4 +154,26 @@ checkMainzButton?.addEventListener("click", () => {
       showHidden();
     } else showError();
   } else showError();
+});
+
+// TASK 5
+
+const checkNoMainzButton = document.getElementById("checkNoMainzButton");
+
+checkNoMainzButton?.addEventListener("click", () => {
+  const selValFr = document.getElementById("Frankfurt").value;
+  const selVaAb = document.getElementById("Aschaffenburg").value;
+  const selValMn = document.getElementById("Mannheim").value;
+  const selValHd = document.getElementById("Heidelberg").value;
+  const selValPr = document.getElementById("Paris").value;
+
+  if (
+    selValFr === "Frankfurt" &&
+    selVaAb === "Aschaffenburg" &&
+    selValMn === "Mannheim" &&
+    selValHd === "Heidelberg" &&
+    selValPr === "Paris"
+  )
+    showHidden();
+  else showError();
 });

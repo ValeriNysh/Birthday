@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Birthday, Schss!</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Oswald:wght@200..700&family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <h1 class="task-num">Task №5</h1>
+
+    <div class="bunnyAndText">
+      <div class="bunnySays">
+        <p>
+          Choose all the photos that were made in
+          <span class="highlightText">Mainz</span>
+        </p>
+      </div>
+      <img id="bunny" src="../sources/bunny.png" />
+    </div>
+
+    <form id="optionButtonsForm" onsubmit="return false;">
+      <button
+        id="btnWo4"
+        class="mainzBtn"
+        onclick="choosePhotoMainz(event, 'btnWo4')"
+      ></button>
+      <button
+        id="btnWo2"
+        class="mainzBtn"
+        onclick="choosePhotoMainz(event, 'btnWo2')"
+      ></button>
+      <button
+        id="btnWo8"
+        class="mainzBtn"
+        onclick="choosePhotoMainz(event, 'btnWo8')"
+      ></button>
+      <button
+        id="btnWo6"
+        class="mainzBtn"
+        onclick="choosePhotoMainz(event, 'btnWo6')"
+      ></button>
+      <button
+        id="btnWo3"
+        class="mainzBtn"
+        onclick="choosePhotoMainz(event, 'btnWo3')"
+      ></button>
+      <button
+        id="btnWo7"
+        class="mainzBtn"
+        onclick="choosePhotoMainz(event, 'btnWo7')"
+      ></button>
+      <button
+        id="btnWo5"
+        class="mainzBtn"
+        onclick="choosePhotoMainz(event, 'btnWo5')"
+      ></button>
+      <button
+        id="btnWo1"
+        class="mainzBtn"
+        onclick="choosePhotoMainz(event, 'btnWo1')"
+      ></button>
+
+      <div>
+        <button id="checkMainzButton" type="button">Check</button>
+      </div>
+    </form>
+
+    <div id="errorMessage">
+      <div class="bunnyAndText">
+        <img id="happyBunny" src="../sources/Marienkaefer.webp" />
+        <div class="bunnySays">
+          <p>Try again, Schatz</p>
+          <p>I believe in you !</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="hidden">
+      <div>
+        <div class="bunnyAndText">
+          <div class="bunnySays">
+            <p>Genau ! Richtig !</p>
+            <p>Of course my Schatz knows it</p>
+          </div>
+          <img id="happyBunny" src="../sources/Schss with Pelmeshka.webp" />
+        </div>
+        <p>...<span class="highlightText">...</span>...</p>
+      </div>
+      <button id="nextTaskButton" onClick="location.href='task6.html'">
+        Next Task
+      </button>
+    </div>
+
+    <script src="../main.js" defer></script>
+  </body>
+</html>
