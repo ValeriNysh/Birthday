@@ -69,6 +69,9 @@ let currentAudio = null;
 function playMusic(event, audioId) {
   event.preventDefault();
 
+  // const musicButton = document.getElementsByClassName("musicButton");
+  // musicButton.style.backgroundColor = "#ffbf9d";
+
   const audio = document.getElementById(audioId);
 
   if (currentAudio && currentAudio != audio) {
@@ -77,10 +80,8 @@ function playMusic(event, audioId) {
   }
 
   if (audio.paused) {
-    console.log("Playing audio");
     audio.play().catch((error) => console.error("Error playing audio:", error));
   } else {
-    console.log("Pausing audio");
     audio.pause();
   }
 
@@ -107,4 +108,51 @@ checkSongBtn?.addEventListener("click", () => {
   } else {
     showError();
   }
+});
+
+// TASK 4
+
+let checkedButtons = [];
+
+function choosePhotoMainz(event, buttonId) {
+  event.preventDefault();
+
+  const mainzButton = document.getElementById(buttonId);
+
+  // for (let i = 0; i < checkedButtons.length; i++) {
+  // if (checkedButtons[i] === buttonId) {
+  const index = checkedButtons.indexOf(buttonId);
+  if (index > -1) {
+    checkedButtons.splice(index, 1);
+    mainzButton.style.borderColor = "white";
+  } else {
+    checkedButtons.push(buttonId);
+    mainzButton.style.borderColor = "yellow";
+  }
+}
+
+const checkMainzButton = document.getElementById("checkMainzButton");
+
+checkMainzButton?.addEventListener("click", () => {
+  checkedButtons.forEach(function (checkedBtn) {
+    console.log(checkedBtn);
+  });
+
+  if (checkedButtons.length === 3) {
+    let correct = 0;
+    checkedButtons.forEach(function (checkedBtn) {
+      if (
+        checkedBtn === "btnWo1" ||
+        checkedBtn === "btnWo2" ||
+        checkedBtn === "btnWo3"
+      ) {
+        correct++;
+      } else showError();
+    });
+
+    if (correct === 3) {
+      checkMainzButton.style.display = "none";
+      showHidden();
+    } else showError();
+  } else showError();
 });

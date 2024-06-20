@@ -32,57 +32,60 @@
     <div class="task-description">
       <img id="photo" src="../sources/Mannheim Photo.PNG" />
     </div>
-    <audio
-      id="audioWrong1"
-      src="../sources/Like I love you.mp3"
-      type="audio/mpeg"
-    ></audio>
-    <button
-      id="musicBtnWrong1"
-      class="musicButton"
-      onclick="playMusic(event, 'audioWrong1')"
-    >
-      1
-    </button>
 
-    <audio
-      id="audioCorrect"
-      src="../sources/Something about you.mp3"
-      type="audio/mpeg"
-    ></audio>
-    <button
-      id="musicBtnCorrect"
-      class="musicButton"
-      onclick="playMusic(event, 'audioCorrect')"
-    >
-      2
-    </button>
+    <form id="optionButtonsForm">
+      <audio
+        id="audioWrong1"
+        src="../sources/Like I love you.mp3"
+        type="audio/mpeg"
+      ></audio>
+      <button
+        id="musicBtnWrong1"
+        class="musicButton"
+        onclick="playMusic(event, 'audioWrong1')"
+      >
+        1
+      </button>
 
-    <audio
-      id="audioWrong2"
-      src="../sources/Beautiful things.mp3"
-      type="audio/mpeg"
-    ></audio>
-    <button
-      id="musicBtnWrong2"
-      class="musicButton"
-      onclick="playMusic(event, 'audioWrong2')"
-    >
-      3
-    </button>
+      <audio
+        id="audioCorrect"
+        src="../sources/Something about you.mp3"
+        type="audio/mpeg"
+      ></audio>
+      <button
+        id="musicBtnCorrect"
+        class="musicButton"
+        onclick="playMusic(event, 'audioCorrect')"
+      >
+        2
+      </button>
 
-    <audio
-      id="audioWrong3"
-      src="../sources/Feeling good.mp3"
-      type="audio/mpeg"
-    ></audio>
-    <button
-      id="musicBtnWrong3"
-      class="musicButton"
-      onclick="playMusic(event, 'audioWrong3')"
-    >
-      4
-    </button>
+      <audio
+        id="audioWrong2"
+        src="../sources/Beautiful things.mp3"
+        type="audio/mpeg"
+      ></audio>
+      <button
+        id="musicBtnWrong2"
+        class="musicButton"
+        onclick="playMusic(event, 'audioWrong2')"
+      >
+        3
+      </button>
+
+      <audio
+        id="audioWrong3"
+        src="../sources/Feeling good.mp3"
+        type="audio/mpeg"
+      ></audio>
+      <button
+        id="musicBtnWrong3"
+        class="musicButton"
+        onclick="playMusic(event, 'audioWrong3')"
+      >
+        4
+      </button>
+    </form>
 
     <form id="songAnswerForm" class="answerForm">
       <select id="dropdown">
@@ -96,13 +99,19 @@
     </form>
 
     <div id="errorMessage">
-      <p>Try again, Schatz</p>
-      <p>I believe in you !</p>
+      <div class="bunnyAndText">
+        <img id="happyBunny" src="../sources/Marienkaefer.webp" />
+        <div class="bunnySays">
+          <p>Try again, Schatz</p>
+          <p>I believe in you !</p>
+        </div>
+      </div>
     </div>
+
     <div id="hidden">
       <div>
         <div class="bunnyAndText">
-          <img id="happyBunny" src="../sources/happyBunny.png" />
+          <img id="happyBunny" src="../sources/Schss with Konus.webp" />
           <div class="bunnySays">
             <p class="correctAnswerSmaller">Something about you</p>
             <p>- by Herni Purnel</p>
@@ -113,20 +122,19 @@
           <span class="highlightText">einzigartig</span> about my Schss !
         </p>
         <p>
-          Such a <span class="highlightText">unic</span> Scheiss gibt's
+          Such a <span class="highlightText">unic</span> Schss gibt's
           <span class="highlightText">nur ein mal !</span>
         </p>
         <p>
           So <span class="highlightText">cool</span>,
           <span class="highlightText">funny</span>,
-          <span class="highlightText">manchmal crazy</span> Scheiss !
+          <span class="highlightText">manchmal crazy</span> Schss !
         </p>
         <p>
-          The <span class="highlightText">best</span> Scheiss in the whole world
-          !
+          The <span class="highlightText">best</span> Schss in the whole world !
         </p>
       </div>
-      <button id="nextTaskButton" onClick="location.href='task2.html'">
+      <button id="nextTaskButton" onClick="location.href='task4.html'">
         Next Task
       </button>
     </div>

@@ -7,7 +7,7 @@ body {
   /* background-color: #29064b; */
   /* background-color: #380c64; */
   /* background-color: #1c0471; */
-  background: linear-gradient(to right, #320a5a, #1c0471);
+  background: linear-gradient(to left, #320a5a, #2c1776, #1c0471);
   color: white;
   font-family: "Cabin", sans-serif;
   font-optical-sizing: auto;
@@ -58,21 +58,21 @@ button:hover {
 
 .bunnySays {
   padding: 20px;
+  padding-top: 30px;
   margin-top: 12px;
-  width: 200px;
+  width: 170px;
   border-radius: 50%;
   border: 1px solid #cdd7fc;
 }
 
 #bunny {
   width: 140px;
-  /* height: max-content; */
   display: flex;
   /* justify-content: center; */
 }
 
 #happyBunny {
-  height: 200px;
+  height: 180px;
 }
 
 .main-description {
@@ -81,7 +81,6 @@ button:hover {
 
 .task-num {
   text-decoration: underline;
-  /* color: aqua; */
   margin: 16px 0;
 }
 
@@ -91,19 +90,27 @@ button:hover {
   background-color: #fff;
 }
 
-#checkButton:disabled {
-  background-color: #fff;
-}
-
 #errorMessage {
   margin-top: 36px;
-  color: #ff24b2;
+  padding: 10px;
   display: none;
   flex-direction: column;
+  border-radius: 5%;
+  max-width: 500px;
+  align-self: center;
+}
+
+#errorMessage .bunnySays {
+  padding-top: 40px;
+  border-color: rgb(255, 56, 255);
+  background-color: rgba(246, 131, 246, 0.497);
+  font-size: large;
+  width: 160px;
 }
 
 #errorMessage p {
-  margin: 0;
+  margin-top: 0px;
+  color: rgb(255, 255, 255);
 }
 
 #hidden {
@@ -173,59 +180,48 @@ button:hover {
   margin: 10px;
   border: none;
   border-radius: 10%;
+  background: white;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .optionBtn:hover {
   box-shadow: -8px 8px 8px #5011b5;
-  background-color: #fff;
 }
 
 #btnWrong1 {
   background-image: url(sources/waffle.png);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-#btnWrong1:checked {
-  border: 1px solid red;
 }
 
 #btnWrong2 {
-  background: none;
   background-image: url(sources/limonade.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
 #btnWrong3 {
-  background: none;
   background-image: url(sources/zimtschnecke.png);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
 #btnCorrect {
-  background: white;
   background-image: url(sources/sahne.png);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
 /* ////////////////////////// */
 /* TASK 3 */
 #photo {
   width: 80%;
+  max-width: 300px;
+  margin-top: 10px;
 }
 
 .musicButton {
-  width: 100%;
+  width: 80%;
+  max-width: 150px;
   height: 40px;
-  border-radius: 0%;
+  align-self: center;
+  border-radius: 30%;
   padding: 10px;
+  font-size: x-large;
 }
 
 #dropdown {
@@ -242,6 +238,42 @@ select#dropdown {
   font-size: 20px;
   text-align: center;
   padding-right: 5px;
+}
+
+/* ////////////////////////// */
+/* TASK 4 */
+.mainzBtn {
+  width: 250px;
+  height: 250px;
+  margin: 10px;
+  border: 5px solid #fff;
+  border-radius: 10%;
+  background-size: cover;
+}
+
+#btnWo1 {
+  background-image: url(sources/wo1.jpg);
+}
+#btnWo2 {
+  background-image: url(sources/wo2.jpg);
+}
+#btnWo3 {
+  background-image: url(sources/wo3.jpg);
+}
+#btnWo4 {
+  background-image: url(sources/wo4.jpg);
+}
+#btnWo5 {
+  background-image: url(sources/wo5.jpg);
+}
+#btnWo6 {
+  background-image: url(sources/wo6.jpg);
+}
+#btnWo7 {
+  background-image: url(sources/wo7.jpg);
+}
+#btnWo8 {
+  background-image: url(sources/wo8.jpg);
 }
 
 /* 393px * 852px // 430px * 932px */
