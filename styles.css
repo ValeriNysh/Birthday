@@ -73,6 +73,12 @@ button:hover {
 
 #happyBunny {
   height: 180px;
+  margin: 0 1px;
+}
+
+#happyBunnyBigger {
+  height: 300px;
+  margin: 0 1px;
 }
 
 .main-description {
@@ -190,34 +196,35 @@ button:hover {
   box-shadow: -8px 8px 8px #5011b5;
 }
 
-#btnWrong1 {
+#btnWrong1 .optionBtn {
   background-image: url(sources/waffle.png);
 }
 
-#btnWrong2 {
+#btnWrong2 .optionBtn {
   background-image: url(sources/limonade.jpg);
 }
 
-#btnWrong3 {
+#btnWrong3 .optionBtn {
   background-image: url(sources/zimtschnecke.png);
 }
 
-#btnCorrect {
+#btnCorrect .optionBtn {
   background-image: url(sources/sahne.png);
 }
 
 /* ////////////////////////// */
-/* TASK 3 */
+/* TASK 3 and particulary TASK 5 */
 #photo {
   width: 80%;
   max-width: 300px;
   margin-top: 10px;
 }
 
-.musicButton {
+.musicButton,
+.textButton {
   width: 80%;
   max-width: 150px;
-  height: 40px;
+  height: 50px;
   align-self: center;
   border-radius: 30%;
   padding: 10px;
@@ -274,6 +281,15 @@ select#dropdown {
 }
 #btnWo8 {
   background-image: url(sources/wo8.jpg);
+}
+
+/* TASK 5 */
+
+
+/* TASK 6 */
+
+.textButton {
+  text-transform: none;
 }
 
 /* 393px * 852px // 430px * 932px */

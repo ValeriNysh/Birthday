@@ -62,7 +62,7 @@ function checkAnswer(event, buttonId) {
   }
 }
 
-// TASK 3
+// TASK 3 and particulary TASK 5
 
 let currentAudio = null;
 
