@@ -50,6 +50,20 @@ button:hover {
   background-color: #fff;
 }
 
+video {
+  max-width: 500px;
+  max-height: 700px;
+  border-radius: 5%;
+  border-color: #2600ff;
+}
+
+.video {
+  margin: 20px;
+  color: #4dff06;
+  font-weight: bold;
+  border-top: 3px solid #4dff06;
+}
+
 .bunnyAndText {
   display: flex;
   justify-content: center;
@@ -60,7 +74,8 @@ button:hover {
   padding: 20px;
   padding-top: 30px;
   margin-top: 12px;
-  width: 170px;
+  min-width: 100px;
+  max-width: 170px;
   border-radius: 50%;
   border: 1px solid #cdd7fc;
 }
@@ -144,11 +159,8 @@ button:hover {
 
 .highlightText {
   color: rgb(92, 236, 255);
-  /* color: rgb(242, 255, 0); */
-  /* color: rgb(238, 244, 128); */
 }
 
-/* ////////////////////////// */
 /* TASK 1 */
 
 .answerForm {
@@ -158,7 +170,7 @@ button:hover {
   margin-top: 12px;
 }
 
-#answerForm input {
+#task1Input {
   width: 50px;
   height: 5px;
   padding: 20px;
@@ -172,7 +184,6 @@ button:hover {
   border-radius: 16%;
 }
 
-/* ////////////////////////// */
 /* TASK 2 */
 
 #optionButtonsForm {
@@ -212,8 +223,7 @@ button:hover {
   background-image: url(sources/sahne.png);
 }
 
-/* ////////////////////////// */
-/* TASK 3 and particulary TASK 5 */
+/* TASK 3 and particulary TASK 6 */
 #photo {
   width: 80%;
   max-width: 300px;
@@ -247,7 +257,6 @@ select#dropdown {
   padding-right: 5px;
 }
 
-/* ////////////////////////// */
 /* TASK 4 */
 .mainzBtn {
   width: 250px;
@@ -313,6 +322,36 @@ select.citiesDropdown {
   text-transform: none;
 }
 
-/* 393px * 852px // 430px * 932px */
-@media screen and (max-width: 393px) {
+.photoCity {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* TASK 7 */
+
+.task7Input {
+  width: 200px;
+  height: 5px;
+  padding: 20px;
+  font-family: "Cabin", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  text-transform: uppercase;
+  border-radius: 20%;
+}
+
+/* FINISH */
+
+.wheit {
+  color: white;
+}
+
+.finishFoto {
+  display: flex;
+  align-self: flex-end;
 }

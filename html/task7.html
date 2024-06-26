@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Birthday, Schss!</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Oswald:wght@200..700&family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <h1 class="task-num">Task №7</h1>
+
+    <div class="bunnyAndText">
+      <div class="bunnySays">
+        <p class="task-description">
+          <span class="highlightText">Schatz !!</span>
+        </p>
+        <p class="task-description">
+          We are at the <span class="highlightText">finish line</span> !
+        </p>
+      </div>
+      <img id="bunny" src="../sources/bunny.png" />
+    </div>
+
+    <p>
+      <span class="highlightText">Watch</span> this video and
+      <span class="highlightText">answer</span> the following questions:
+    </p>
+    <div>
+      <video width="90%" controls poster="../sources/vid - flugzeug.PNG">
+        <source src="../sources/vid - flugzeug.mp4" type="video/mp4" />
+      </video>
+    </div>
+    <form id="answerForm" class="answerForm">
+      <div class="task-description">
+        <p>1. Which Month was that ?</p>
+      </div>
+      <input id="task7-1" class="task7Input" type="text" />
+      <div class="task-description">
+        <p>2. What did my Schss gegessen there ?</p>
+      </div>
+      <input id="task7-2" class="task7Input" type="text" />
+      <div class="task-description">
+        <p>3. What type of Flugzeug do we see on the video ?</p>
+      </div>
+      <input id="task7-3" class="task7Input" type="text" />
+
+      <button id="checkFlugzeugButton" type="submit">Check</button>
+    </form>
+
+    <div id="errorMessage">
+      <div class="bunnyAndText">
+        <img id="happyBunny" src="../sources/Marienkaefer.webp" />
+        <div class="bunnySays">
+          <p>Try again, Schatz</p>
+          <p>I believe in you !</p>
+          <p>💪 💪 💪</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="hidden">
+      <div>
+        <div class="bunnyAndText">
+          <div class="bunnySays">
+            <p><span class="highlightText">EXACTLY !</span></p>
+          </div>
+          <img id="happyBunny" src="../sources/Schss with Pelmeshka.webp" />
+        </div>
+
+        <p>
+          <span class="highlightText">1. </span>
+          Schss 1 and Schss 2 were watching Flugzeuge in
+          <span class="highlightText">April</span>
+        </p>
+        <p>
+          <span class="highlightText">2. </span>My Schatz ate an
+          <span class="highlightText">Ice cream</span>
+        </p>
+        <p>
+          <span class="highlightText">3. </span>
+          To be honest, Bunny has no idea what is the right answer to the
+          question #3.
+        </p>
+        <p>
+          But I’m sure that my Schatz
+          <span class="highlightText">knows it perfectly</span>, so I don’t need
+          to check it
+        </p>
+        <div class="video"><p>Moreover</p></div>
+        <p>
+          You are <span class="highlightText">free</span> and
+          <span class="highlightText">powerful</span> just like your favorite
+          Flugzeug.
+        </p>
+        <p>
+          You are <span class="highlightText">free</span> to always choose
+          <span class="highlightText">the best for yourself</span>.
+        </p>
+        <p>
+          You are <span class="highlightText">powerful</span> to change any
+          situation the way that it <span class="highlightText">helps you</span>
+        </p>
+      </div>
+
+      <div class="video">
+        <p>FLying-in-bed-2 Schss-Video unlocked :</p>
+        <video width="90%" controls poster="../sources/vid - flying in bed.PNG">
+          <source src="../sources/vid - flying in bed.mp4" type="video/mp4" />
+        </video>
+      </div>
+
+      <div class="video">
+        <div class="bunnyAndText">
+          <div class="bunnySays">
+            <p>Actually you've UNLOCKED Gift #4</p>
+          </div>
+          <img id="happyBunny" src="../sources/Pelmeshka with hat.webp" />
+        </div>
+      </div>
+      <p>But you receive it when we are back in Frankfurt 🤟 🤟 🤟</p>
+      <h2>You believe !</h2>
+
+      <button id="nextTaskButton" onClick="location.href='../finish.html'">
+        Finish
+      </button>
+    </div>
+
+    <script src="../main.js" defer></script>
+  </body>
+</html>

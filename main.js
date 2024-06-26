@@ -1,5 +1,5 @@
 function scrollToCenter(element) {
-  element?.scrollIntoView({ behavior: "smooth", block: "center" });
+  element?.scrollIntoView({ behavior: "smooth", block: "start" });
 }
 
 function showHidden() {
@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   function checkNumber() {
-    if (parseInt(task1Input.value) === 28) {
+    if (parseInt(task1Input?.value) === 28) {
       answerForm.style.display = "none";
       showHidden();
     } else {
@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
-// TASK 2
+// TASK 2 and 4
 
 function checkAnswer(event, buttonId) {
   event.preventDefault();
@@ -68,9 +68,6 @@ let currentAudio = null;
 
 function playMusic(event, audioId) {
   event.preventDefault();
-
-  // const musicButton = document.getElementsByClassName("musicButton");
-  // musicButton.style.backgroundColor = "#ffbf9d";
 
   const audio = document.getElementById(audioId);
 
@@ -109,7 +106,7 @@ checkSongBtn?.addEventListener("click", () => {
   }
 });
 
-// TASK 4
+// TASK 5
 
 let checkedButtons = [];
 
@@ -118,8 +115,6 @@ function choosePhotoMainz(event, buttonId) {
 
   const mainzButton = document.getElementById(buttonId);
 
-  // for (let i = 0; i < checkedButtons.length; i++) {
-  // if (checkedButtons[i] === buttonId) {
   const index = checkedButtons.indexOf(buttonId);
   if (index > -1) {
     checkedButtons.splice(index, 1);
@@ -156,7 +151,7 @@ checkMainzButton?.addEventListener("click", () => {
   } else showError();
 });
 
-// TASK 5
+// TASK 6
 
 const checkNoMainzButton = document.getElementById("checkNoMainzButton");
 
@@ -173,7 +168,31 @@ checkNoMainzButton?.addEventListener("click", () => {
     selValMn === "Mannheim" &&
     selValHd === "Heidelberg" &&
     selValPr === "Paris"
-  )
+  ) {
+    checkNoMainzButton.style.display = "none";
     showHidden();
-  else showError();
+  } else showError();
+});
+
+// TASK 7
+
+const checkBtn = document.getElementById("checkFlugzeugButton");
+
+checkBtn?.addEventListener("click", () => {
+  const input1 = document.getElementById("task7-1");
+  const input2 = document.getElementById("task7-2");
+  const input3 = document.getElementById("task7-3");
+
+  if (
+    input1.value.toUpperCase() === "APRIL" &&
+    (input2.value.toUpperCase() === "ICE CREAM" ||
+      input2.value.toUpperCase() === "ICECREAM" ||
+      input2.value.toUpperCase() === "ICE-CREAM" ||
+      input2.value.toUpperCase() === "ICE" ||
+      input2.value.toUpperCase() === "EIS") &&
+    input3.value
+  ) {
+    checkBtn.style.display = "none";
+    showHidden();
+  } else showError();
 });
